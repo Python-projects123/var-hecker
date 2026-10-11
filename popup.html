@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Scratch Variable Editor</title>
+<style>
+*{box-sizing:border-box}body{width:380px;max-height:600px;overflow-y:auto;margin:0;padding:16px;background:#141619;color:#e6e9ef;font:14px Arial,sans-serif}h2{margin:0 0 5px;font-size:19px}.subtitle{color:#9ba3af;font-size:12px;margin-bottom:14px}button,input{border:1px solid #414751;border-radius:6px;padding:8px;background:#22262c;color:#f5f5f5;font:inherit}button{cursor:pointer}button:hover{background:#303640}button:disabled{opacity:.5;cursor:wait}#refresh{width:100%;background:#245da8;border-color:#3578ce}#status{margin:12px 0;color:#abb4c1;line-height:1.4;overflow-wrap:anywhere}.variable{border:1px solid #343941;border-radius:8px;padding:10px;margin:8px 0}.var-name{font-weight:bold;overflow-wrap:anywhere}.var-target{color:#9ba3af;font-size:11px;margin-top:4px}.var-current{margin-top:7px;color:#c6ccd5;overflow-wrap:anywhere}.controls{display:flex;gap:6px;margin-top:8px}.controls input{width:0;flex:1;min-width:0}.empty{color:#9ba3af;padding:12px 0}
+</style>
+</head>
+<body>
+<h2>Scratch Variable Editor</h2>
+<div class="subtitle">Ninja Greninja · Live project variables</div>
+<button id="refresh">Refresh variables</button>
+<div id="status">Connecting...</div>
+<div id="variables"></div>
+<script src="popup.js"></script>
+</body>
+</html>

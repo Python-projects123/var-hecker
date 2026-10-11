@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Scratch Variable Editor",
+  "version": "2.0.0",
+  "description": "Inspect and edit live Scratch project variables.",
+  "permissions": ["activeTab", "webNavigation"],
+  "host_permissions": ["https://ninja.greninja.xyz/*"],
+  "action": {"default_popup": "popup.html"},
+  "content_scripts": [{
+    "matches": ["https://ninja.greninja.xyz/*"],
+    "js": ["content.js"],
+    "all_frames": true,
+    "run_at": "document_idle"
+  }],
+  "web_accessible_resources": [{
+    "resources": ["page.js"],
+    "matches": ["https://ninja.greninja.xyz/*"]
+  }]
+}
